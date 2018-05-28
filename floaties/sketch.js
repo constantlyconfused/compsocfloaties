@@ -39,27 +39,6 @@ function draw() {
 		}
 	}
 	
-	if (floatarray.size<numfloaties){
-		for(var i=0; i<numfloaties-floatarray.size; i++){
-		var sfill=true;
-		var type;
-		if (random(0,1)>0.5 && type=='circle'){
-			sfill=false;
-		}
-		var randnum=random(0,1);
-		if (randnum<0.4){
-			type='circle';
-		}else if (randnum<0.6){
-			type='square';
-		}else if (randnum<0.8){
-			type='triangle';
-		}else{
-			type='cross';
-		}
-		
-		floatarray.push(new Floaty(type, sfill, random(15,30)));
-		}
-	}
 }
 
 //circle, square, cross, triangle
